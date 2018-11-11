@@ -169,6 +169,26 @@ You can always change your webhook URL and/or webhook secret using the same comm
 
 > **Note:** You will not see your build here just yet! You will need to use Xcode or Application Loader to upload your IPA first. Once you do that, you can check the status of your build under `Activity`. Processing an app can take 10-15 minutes before it shows up under available builds.
 
+In order to see your app on Testflight, you will first need to submit your .IPA file to Apple using Application loader. In order to do this, there are a few prequisite steps which you may not have followed previously if this is your first app submission to Apple;
+
+1. Make sure you have logged into iTunes connect at least once with your Apple ID and accepted the terms.
+2. Login to https://appleid.apple.com
+3. Generate an app specific password by going to Accounts > Manage > Generate App Specific Password. Make a note of this password as it will be needed later.
+4. Start XCode but do not load any project
+5. From the XCode menu in the menu bar, select 'Open Developer Tool' and then 'Application Loader'
+6. Once Application Loader launches, login with your Apple ID and the app specific password generated in step 3
+7. Follow the steps to agree to the necessary terms.
+8. Once you have agreed to all terms, double-click on the light-grey panel in the center (above the words 'Deliver Your App').
+9. Follow the steps to upload your IPA to Apple.
+
+You can check the status of your app submission to TestFlight in App Store Connect (http://appstoreconnect.apple.com);
+
+1. Login to http://appstoreconnect.apple.com with your Apple ID and regular password (NOT your app specific password)
+2. Select 'My Apps' and you should see your app listed.
+3. Click 'TestFlight' from the menu bar at the top.
+4. This will show your current app builds that are available for testing.
+5. In order to test the app on your device, you will need to install the TestFlight iOS app from the App Store, and sign in using your Apple ID.
+
 ## 6. Submit it to the appropriate store
 
 We don't automate this step (yet), but at this point you should be able to follow the Apple and Google documentation to submit your standalone binary to each respective store. For more info on how to polish your app and ensure it is accepted to the Apple and Google marketplaces, read the guide on [Deploying to App Stores](./app-stores.html).
