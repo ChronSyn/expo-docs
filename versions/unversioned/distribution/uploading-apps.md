@@ -44,6 +44,28 @@ To upload the previously built standalone app to the appropriate app store, you 
 
 Before using `expo-cli` for uploading your standalone app builds, you have to upload your app manually at least once. [See here for the instructions on how to do it.](https://support.google.com/googleplay/android-developer/answer/113469)
 
+## Manually uploading your iOS standalone app
+
+In order to see your app on Testflight, you will first need to submit your .IPA file to Apple using Application loader. In order to do this, there are a few prequisite steps which you may not have followed previously if this is your first app submission to Apple:
+
+1. Make sure you have logged into iTunes connect at least once with your Apple ID and accepted the terms.
+2. Login to https://appleid.apple.com
+3. Generate an app specific password by going to Accounts > Manage > Generate App Specific Password. Make a note of this password as it will be needed later.
+4. Start XCode but do not load any project
+5. From the XCode menu in the menu bar, select 'Open Developer Tool' and then 'Application Loader'
+6. Once Application Loader launches, login with your Apple ID and the app specific password generated in step 3
+7. Follow the steps to agree to the necessary terms.
+8. Once you have agreed to all terms, double-click on the light-grey panel in the center (above the words 'Deliver Your App').
+9. Follow the steps to upload your IPA to Apple.
+
+You can check the status of your app submission to TestFlight in App Store Connect (http://appstoreconnect.apple.com);
+
+1. Login to http://appstoreconnect.apple.com with your Apple ID and regular password (NOT your app specific password)
+2. Select 'My Apps' and you should see your app listed.
+3. Click 'TestFlight' from the menu bar at the top.
+4. This will show your current app builds that are available for testing.
+5. In order to test the app on your device, you will need to install the TestFlight iOS app from the App Store, and sign in using your Apple ID.
+
 #### Using expo-cli to upload the further builds of your app
 
 After these steps, you can make use of `expo-cli` to upload your further app builds to Google Play.
