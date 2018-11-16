@@ -169,7 +169,7 @@ You can always change your webhook URL and/or webhook secret using the same comm
 
 > **Note:** You will not see your build here just yet! You will need to use Xcode or Application Loader to upload your IPA first. Once you do that, you can check the status of your build under `Activity`. Processing an app can take 10-15 minutes before it shows up under available builds.
 
-In order to see your app on Testflight, you will first need to submit your .IPA file to Apple using Application loader. In order to do this, there are a few prequisite steps which you may not have followed previously if this is your first app submission to Apple;
+In order to see your app on Testflight, you will first need to submit your .IPA file to Apple using Application loader. In order to do this, there are a few prequisite steps which you may not have followed previously if this is your first app submission to Apple:
 
 1. Make sure you have logged into iTunes connect at least once with your Apple ID and accepted the terms.
 2. Login to https://appleid.apple.com
